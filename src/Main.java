@@ -13,10 +13,10 @@ public class Main {
         // Welcome message
         System.out.println("Hello and welcome to the password generating program!");
 
-        // creating a Random object from the Random package
+        // Creating a Random object from the Random package
         Random random = new Random();
 
-        // creating a Scanner object from Scanner packageg
+        // Creating a Scanner object from Scanner package
         Scanner scanner = new Scanner(System.in);
 
         int number = 0;
@@ -24,21 +24,21 @@ public class Main {
         while(true){
             try{
 
-                // asking the user to enter a length for the password
+                // Asking the user to enter a length for the password
                 System.out.println("Enter a number: ");
 
-                // initialising user input into a variable
+                // Initialising user input into a variable
                 number = scanner.nextInt();
 
-                //exiting the loop upon this try block of coding executing without error
+                // Exiting the loop upon this try block of coding executing without error
                 break;
 
             } catch (Exception e) {
 
-                //prompting the user with an error message
+                // Prompting the user with an error message
                 System.out.println("Invalid number!");
 
-                // resetting the scanner buffer
+                // Resetting the scanner buffer
                 scanner.nextLine();
 
             }
@@ -46,12 +46,12 @@ public class Main {
 
 
 
-        // initialisation of variables used to store characters that will be used for generating the password
+        // Initialisation of variables used to store characters that will be used for generating the password
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String symbols = "\'\"!@#$%^&*()_+=-{}[]|:;<>,./?";
         String password = "";
 
-        // for loop for generating the password, looping through enough times based on user's length of password requested
+        // For loop for generating the password, looping through enough times based on user's length of password requested
         for (int i = 1; i <= number; i++) {
             int num = (int)(Math.random() * 3) + 1;
             switch(num){
