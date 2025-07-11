@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Main {
+public class PasswordGenerator {
     public static void main(String[] args) {
 
         // Welcome message
