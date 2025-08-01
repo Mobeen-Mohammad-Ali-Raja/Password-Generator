@@ -25,7 +25,7 @@ public class PasswordGenerator {
             try{
 
                 // Asking the user to enter a length for the password
-                System.out.println("Enter a number: ");
+                System.out.println("Enter a number(length of password): ");
 
                 // Initialising user input into a variable
                 number = scanner.nextInt();
@@ -68,7 +68,7 @@ public class PasswordGenerator {
         }
 
         // Printing the user's password generated
-        System.out.println(password);
+        System.out.println("Your password: " + password);
 
     }
 }
